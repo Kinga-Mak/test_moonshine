@@ -46,7 +46,7 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             ...parent::menu(),
-            MenuItem::make('App\Models\Users', UserResource::class),
+            MenuItem::make('Users', UserResource::class),
         ];
     }
 

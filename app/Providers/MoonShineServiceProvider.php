@@ -32,9 +32,6 @@ class MoonShineServiceProvider extends ServiceProvider
                 ...$config->getPages(),
             ])
         ;
-
-        //  Menu
-
         
         // Logo
         $config
