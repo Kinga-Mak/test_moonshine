@@ -20,7 +20,8 @@ class OwnerResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Imię i nazwisko', 'name'),
+            Text::make('Imię', 'name'),
+            Text::make('Nazwisko', 'surname'),
             Text::make('Numer telefonu', 'phone'),
         ];
     }

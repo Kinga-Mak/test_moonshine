@@ -14,6 +14,7 @@ use App\MoonShine\Resources\MoonShineUserRoleResource;
 use App\MoonShine\Layouts\MoonShineLayout;
 
 use App\MoonShine\Resources\App\Models\UserResource;
+use App\MoonShine\Resources\EmployeeResource;
 use App\MoonShine\Resources\OwnerResource;
 use App\MoonShine\Resources\AnimalResource;
 
@@ -31,6 +32,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
                 UserResource::class,
+                EmployeeResource::class,
                 OwnerResource::class,
                 AnimalResource::class,
             ])

@@ -20,9 +20,11 @@ class EmployeeResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Imię i nazwisko', 'name'),
-            Text::make('Stanowisko', 'position'),
+            Text::make('Imię', 'name'),
+            Text::make('Nazwisko', 'surname'),
             Text::make('Email', 'email'),
+            Text::make('Numer telefonu', 'phone'),
+            Text::make('Stanowisko', 'position'),
             // itd.
         ];
     }

@@ -23,6 +23,8 @@ class AnimalResource extends ModelResource
             ID::make()->sortable(),
             Text::make('Imię', 'name'),
             Text::make('Gatunek', 'species'),
+            Text::make('Rasa', 'breed')->nullable(),
+            Text::make('Data urodzenia', 'birth_date')->date()->nullable(),
             BelongsTo::make('Właściciel', 'owner', OwnerResource::class),
         ];
     }
