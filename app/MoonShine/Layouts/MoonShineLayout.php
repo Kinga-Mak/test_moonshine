@@ -31,7 +31,11 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\Wrapper,
     When};
 use App\MoonShine\Resources\App\Models\UserResource;
+use App\MoonShine\Resources\AnimalResource;
+use App\MoonShine\Resources\OwnerResource;
+use App\MoonShine\Resources\EmployeeResource;
 use MoonShine\MenuManager\MenuItem;
+use MoonShine\Laravel\Resources\ModelResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -46,7 +50,10 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             ...parent::menu(),
-            MenuItem::make('Users', UserResource::class),
+            MenuItem::make('Użytkownicy', UserResource::class),
+            MenuItem::make('Pracownicy', EmployeeResource::class),
+            MenuItem::make('Właściciele', OwnerResource::class),
+            MenuItem::make('Zwierzęta', AnimalResource::class),
         ];
     }
 
